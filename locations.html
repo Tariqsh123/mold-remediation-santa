@@ -79,7 +79,7 @@
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
         <div class="flex w-full justify-between lg:w-auto">
           <a href="index.html" class="flex items-center gap-2 group">
-            <img src="assets/images/logo.webp" alt="logo" title="logo" loading="lazy" style="height: 70px;">
+            <img src="assets/images/logo.webp" class="logo" alt="logo" title="logo" loading="lazy" style="height: 90px;">
           </a>
           <button
             id="navbarToggler"
@@ -120,7 +120,7 @@
                 </svg>
               </a>
               <!-- Mega Menu for Services -->
-              <div class="invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-[600px] rounded-lg border bg-card p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/services:visible group-hover/services:opacity-100 group-hover/services:translate-y-0 translate-y-2 z-50">
+              <div class=" invisible absolute left-1/2 -translate-x-1/2 top-full mt-2 w-full max-w-[90vw] lg:w-[600px] rounded-lg border bg-card p-6 opacity-0 shadow-xl transition-all duration-300 ease-out group-hover/services:visible group-hover/services:opacity-100 group-hover/services:translate-y-0 translate-y-2 z-50">
                 <div class="grid grid-cols-2 gap-4 max-h-[400px] overflow-y-auto scrollbar-thin scrollbar-thumb-muted-foreground/20 scrollbar-track-transparent hover:scrollbar-thumb-muted-foreground/40">
                   
                   <a href="services/mold-inspection.html" class="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors group/item">
@@ -248,7 +248,7 @@
         </div>
         
         <!-- Mobile Menu & CTA Button -->
-        <div class="bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
+        <div class="mobile-menu bg-background group-data-[state=active]:block lg:group-data-[state=active]:flex mb-6 hidden w-full flex-wrap items-center justify-end space-y-8 rounded-3xl border p-6 shadow-2xl shadow-zinc-300/20 md:flex-nowrap lg:m-0 lg:flex lg:w-fit lg:gap-6 lg:space-y-0 lg:border-transparent lg:bg-transparent lg:p-0 lg:shadow-none dark:shadow-none dark:lg:bg-transparent">
           <!-- Mobile Navigation -->
           <div class="lg:hidden">
             <ul class="space-y-3 text-base">
@@ -388,7 +388,7 @@
     
   <section class="py-12 md:py-20">
   <div class="container mx-auto px-6 space-y-8 md:space-y-12">
-    <div
+    <!-- <div
       class="relative z-10 mx-auto max-w-3xl space-y-6 text-center" data-sal="fade" data-sal-duration="400">
       <h2 class="text-balance text-4xl font-semibold lg:text-5xl">
         Areas We Serve
@@ -396,7 +396,7 @@
       <p class="text-base">
         We proudly serve the following locations in and around Santa Clarita.
       </p>
-    </div>
+    </div> -->
     <div
       class="relative mx-auto grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
       
@@ -646,7 +646,7 @@
           <!-- CTA Buttons -->
           <div class="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6" data-sal="slide-up" data-sal-delay="400" data-sal-duration="400">
             <a
-              href="tel:+1 505 644 7530"
+              href="tel:+1 661 517 6612"
               class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] cursor-pointer bg-primary text-primary-foreground shadow-lg hover:shadow-xl hover:bg-primary/90 h-12 rounded-xl px-8 text-base w-full sm:w-auto group"
             >
               Schedule Your Inspection
@@ -702,14 +702,9 @@
 <footer class="border-t border-border bg-background pt-20 dark:bg-transparent">
   <div class="mx-auto max-w-5xl px-6">
     <div class="grid gap-12 md:grid-cols-5">
-      <div class="md:col-span-2">
-        <a aria-label="go home" class="block size-fit mb-6" href="index.html">
-          <div class="flex items-center gap-2 group">
-            <svg class="w-6 h-6 text-foreground shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-            </svg>
-            <span class="text-lg font-bold text-foreground group-hover:opacity-80 transition-opacity">Mold Remediation Santa Clarita</span>
-          </div>
+      <div class="md:col-span-2 footer-logo-container">
+        <a aria-label="go home" class="block size-fit mb-6 footer-logo" href="index.html">
+          <img src="assets/images/footer-logo.webp" alt="logo" title="logo" loading="lazy" style="height: 150px;width: auto;">
         </a>
         <p class="text-sm text-muted-foreground mb-6 max-w-[300px]">
           Based in Santa Clarita, California, we have been serving our community for over a decade. Our team understands the specific challenges of mold growth in the region, particularly in areas like Valencia and Canyon Country.
@@ -820,7 +815,7 @@
 
     
   <a
-    href="tel:+1 505 644 7530"
+    href="tel:+1 661 517 6612"
     aria-label="Call us"
     class="fixed bottom-6 right-6 z-50 flex items-center gap-2 px-4 py-3 rounded-full bg-accent text-accent-foreground shadow-xl hover:shadow-2xl hover:brightness-110 transition-all duration-200">
     <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">

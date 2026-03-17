@@ -67,3 +67,52 @@
     color: var(--foreground);
   }
 }
+
+
+.footer-logo{
+  position: relative;
+  bottom: 30px;
+  margin: 0;
+}
+
+@media(max-width:600px){
+  .footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo-container p{
+  border-bottom: 1px solid rgb(0, 78, 141);
+  padding-bottom: 20px;
+}
+nav{
+  padding: 0;
+}
+nav .backdrop-blur-lg{
+  border-radius: 0;
+  border-left: none;
+  padding: 0;
+  border-right: none;
+}
+.logo{
+  position: relative;
+  left: 10px;
+}
+.mobile-menu{
+  border-radius: 0;
+  
+}
+    .mobile-menu {
+        border-radius: 0;
+        padding-right: 50px;
+    }
+}
+#navbarToggler{
+  position: relative;
+  right: 20px;
+}
+html, body {
+  overflow-x: hidden;
+}
