@@ -117,7 +117,7 @@
     <meta property="og:description" content="Looking for professional mold remediation in Santa Clarita? Our local experts provide mold removal, inspection, and testing services to ensure a safe and healthy environment.">
     <meta property="og:url" content="https://santaclarita.com/">
 
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://unpkg.com/sal.js/dist/sal.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="assets/global.css" />
@@ -256,10 +256,7 @@
       <div class="relative flex flex-wrap items-center justify-between gap-6 py-3 lg:gap-0 lg:py-4">
         <div class="flex w-full justify-between lg:w-auto">
           <a href="index.html" class="flex items-center gap-2 group">
-            <svg class="w-6 h-6 text-foreground shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-            </svg>
-            <span class="text-lg font-bold text-foreground group-hover:opacity-80 transition-opacity max-w-[170px] leading-none">Mold Remediation Santa Clarita</span>
+            <img src="assets/images/logo.webp" alt="logo" title="logo" loading="lazy" style="height: 70px;">
           </a>
           <button
             id="navbarToggler"
@@ -593,11 +590,12 @@
         <div
           class="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
           <img
-            src="https://images.pexels.com/photos/3913024/pexels-photo-3913024.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-            alt="A person designing a vibrant, heart-patterned orthotic brace indoors, showcasing craftsmanship."
+            src="assets/images/home-about-image.webp"
+            alt="home-about-image"
             loading="lazy"
+            title="home-about-image"
             decoding="async"
-            class="rounded-[15px] shadow w-full h-auto object-cover" />
+            class="rounded-[15px] shadow w-full h-100 object-cover" />
         </div>
       </div>
       <div class="relative space-y-6" data-sal="slide-left" data-sal-duration="400">
@@ -821,9 +819,10 @@
         <div
           class="bg-linear-to-b aspect-76/59 relative rounded-2xl from-zinc-300 to-transparent p-px dark:from-zinc-700">
           <img
-            src="https://images.pexels.com/photos/3913023/pexels-photo-3913023.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-            alt="Orthotic technician using tools to shape a custom brace indoors with focus and precision."
+            src="assets/images/home-why-image.webp"
+            alt="home-why-image"
             loading="lazy"
+            title="home-why-image"
             decoding="async"
             class="rounded-[15px] shadow w-full h-full object-cover" />
         </div>
@@ -1567,9 +1566,8 @@
     
     <section class="py-20">
   <div class="container mx-auto px-6">
-    
     <div class="flex flex-col items-center text-center gap-12">
-      
+
       <!-- Heading -->
       <div class="w-full max-w-3xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -1581,10 +1579,11 @@
       </div>
 
       <!-- FAQs -->
-      <div class="w-full max-w-3xl mx-auto space-y-4 text-left">
-        
-        <details class="group p-6 rounded-lg bg-card border-2 border-foreground">
-          <summary class="flex justify-between items-center cursor-pointer list-none">
+      <div class="w-full max-w-3xl mx-auto space-y-4 text-left" id="faq">
+
+        <!-- FAQ Item 1 -->
+        <details class="group rounded-lg bg-card border-2 border-foreground " open>
+          <summary class="flex justify-between items-center cursor-pointer list-none p-6">
             <span class="font-bold text-foreground">
               What are the signs of mold in a home?
             </span>
@@ -1592,13 +1591,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <p class="mt-4 text-muted-foreground">
+          <p class="px-6 pb-6 text-muted-foreground">
             Common signs include visible mold growth, musty odors, and water damage. If you notice any of these, it's crucial to schedule a mold inspection.
           </p>
         </details>
 
-        <details class="group p-6 rounded-lg bg-card border-2 border-foreground">
-          <summary class="flex justify-between items-center cursor-pointer list-none">
+        <!-- FAQ Item 2 -->
+        <details class="group rounded-lg bg-card border-2 border-foreground">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-6">
             <span class="font-bold text-foreground">
               How much does mold removal cost in Santa Clarita?
             </span>
@@ -1606,13 +1606,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <p class="mt-4 text-muted-foreground">
+          <p class="px-6 pb-6 text-muted-foreground">
             The cost of mold removal can vary based on the extent of the infestation and the size of the area affected. Contact us for a free estimate.
           </p>
         </details>
 
-        <details class="group p-6 rounded-lg bg-card border-2 border-foreground">
-          <summary class="flex justify-between items-center cursor-pointer list-none">
+        <!-- FAQ Item 3 -->
+        <details class="group rounded-lg bg-card border-2 border-foreground">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-6">
             <span class="font-bold text-foreground">
               What are the signs of mold growth that I should be aware of?
             </span>
@@ -1620,13 +1621,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <p class="mt-4 text-muted-foreground">
+          <p class="px-6 pb-6 text-muted-foreground">
             Look for discoloration on walls, ceilings, or floors, as well as persistent allergies or respiratory issues among household members.
           </p>
         </details>
 
-        <details class="group p-6 rounded-lg bg-card border-2 border-foreground">
-          <summary class="flex justify-between items-center cursor-pointer list-none">
+        <!-- FAQ Item 4 -->
+        <details class="group rounded-lg bg-card border-2 border-foreground">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-6">
             <span class="font-bold text-foreground">
               Can I be home during mold remediation services?
             </span>
@@ -1634,13 +1636,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <p class="mt-4 text-muted-foreground">
+          <p class="px-6 pb-6 text-muted-foreground">
             In most cases, it's best to vacate the premises during the remediation process to ensure your safety and health.
           </p>
         </details>
 
-        <details class="group p-6 rounded-lg bg-card border-2 border-foreground">
-          <summary class="flex justify-between items-center cursor-pointer list-none">
+        <!-- FAQ Item 5 -->
+        <details class="group rounded-lg bg-card border-2 border-foreground">
+          <summary class="flex justify-between items-center cursor-pointer list-none p-6">
             <span class="font-bold text-foreground">
               How long does mold remediation take?
             </span>
@@ -1648,16 +1651,32 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </summary>
-          <p class="mt-4 text-muted-foreground">
+          <p class="px-6 pb-6 text-muted-foreground">
             The duration of mold remediation depends on the extent of the problem but typically ranges from a few hours to a few days.
           </p>
         </details>
 
       </div>
-
     </div>
   </div>
 </section>
+
+<script>
+  // Make full <details> clickable and implement accordion
+  document.querySelectorAll('#faq details').forEach((detail) => {
+    detail.addEventListener('click', (e) => {
+      // Toggle only if click was not on summary (native behavior handles summary)
+      if (e.target.tagName !== 'SUMMARY') {
+        detail.open = !detail.open;
+      }
+
+      // Close all other FAQs
+      document.querySelectorAll('#faq details').forEach((other) => {
+        if (other !== detail) other.open = false;
+      });
+    });
+  });
+</script>
   
 
     
@@ -1786,12 +1805,7 @@
     <div class="grid gap-12 md:grid-cols-5">
       <div class="md:col-span-2">
         <a aria-label="go home" class="block size-fit mb-6" href="index.html">
-          <div class="flex items-center gap-2 group">
-            <svg class="w-6 h-6 text-foreground shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
-            </svg>
-            <span class="text-lg font-bold text-foreground group-hover:opacity-80 transition-opacity">Mold Remediation Santa Clarita</span>
-          </div>
+          <img src="assets/images/footer-logo.webp" alt="logo" title="logo" loading="lazy" style="height: 150px;width: auto;">
         </a>
         <p class="text-sm text-muted-foreground mb-6 max-w-[300px]">
           Based in Santa Clarita, California, we have been serving our community for over a decade. Our team understands the specific challenges of mold growth in the region, particularly in areas like Valencia and Canyon Country.
