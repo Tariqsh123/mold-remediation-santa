@@ -94,18 +94,17 @@ nav .backdrop-blur-lg{
   border-radius: 0;
   border-left: none;
   padding: 0;
+  margin: 0;
   border-right: none;
 }
 .logo{
   position: relative;
   left: 10px;
 }
-.mobile-menu{
-  border-radius: 0;
-  
-}
     .mobile-menu {
-        border-radius: 0;
+        border-radius: 20px;
+        width: 99%;
+        margin: 0 auto;
         padding-right: 50px;
     }
 }
@@ -115,4 +114,12 @@ nav .backdrop-blur-lg{
 }
 html, body {
   overflow-x: hidden;
+}
+main{
+  padding-top: 20px;
+}
+@media(max-width:600px){
+ main{
+  padding-top: 40px;
+} 
 }
