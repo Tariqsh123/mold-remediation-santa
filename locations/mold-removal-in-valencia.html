@@ -984,18 +984,35 @@
 </section>
 
 <script>
-  // Make full <details> clickable and implement accordion
-  document.querySelectorAll('#faq details').forEach((detail) => {
-    detail.addEventListener('click', (e) => {
-      // Toggle only if click was not on summary (native behavior handles summary)
-      if (e.target.tagName !== 'SUMMARY') {
-        detail.open = !detail.open;
-      }
+  const faqs = document.querySelectorAll('#faq details');
 
-      // Close all other FAQs
-      document.querySelectorAll('#faq details').forEach((other) => {
-        if (other !== detail) other.open = false;
-      });
+  faqs.forEach((detail) => {
+    const summary = detail.querySelector('summary');
+
+    // Handle summary click (including text + arrow)
+    summary.addEventListener('click', (e) => {
+      e.preventDefault(); // stop native toggle
+
+      const isOpen = detail.open;
+
+      // Close all
+      faqs.forEach((item) => item.open = false);
+
+      // Toggle current
+      detail.open = !isOpen;
+    });
+
+    // Handle click anywhere inside box (including text area)
+    detail.addEventListener('click', (e) => {
+      if (!summary.contains(e.target)) {
+        const isOpen = detail.open;
+
+        // Close all
+        faqs.forEach((item) => item.open = false);
+
+        // Toggle current
+        detail.open = !isOpen;
+      }
     });
   });
 </script>
@@ -1130,7 +1147,7 @@
           <a class="text-muted-foreground hover:text-primary block duration-150" href="../services.html">
             <span>Services</span>
           </a>
-          <a class="text-muted-foreground hover:text-primary block duration-150" href="../locations.html">
+          <a class="text-muted-foreground hover:text-primary block duration-150" href="../location.html">
             <span>Locations</span>
           </a>
           <a class="text-muted-foreground hover:text-primary block duration-150" href="../contact.html">
